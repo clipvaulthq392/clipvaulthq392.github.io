@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<title>Clipperino Poster – returning to app</title>
+</head>
+<body>
+<p>Returning you to Clipperino Poster…</p>
+<p>If nothing happens, <a id="go" href="http://localhost:4007/integrations/social/tiktok">click here</a>.</p>
+<script>
+(function () {
+  var target = "http://localhost:4007/integrations/social/tiktok";
+  var url = target + (window.location.search || "") + (window.location.hash || "");
+  document.getElementById("go").href = url;
+  window.location.replace(url);
+})();
+</script>
+</body>
+</html>
